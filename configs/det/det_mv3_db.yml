@@ -109,7 +109,7 @@ Eval:
     name: SimpleDataSet
     data_dir: /kaggle/input/detect-text-24-04-2/detect-text-24-04_2/
     label_file_list:
-      - /kaggle/input/detect-text-24-04-2/detect-text-24-04_2/
+      - /kaggle/input/detect-text-24-04-2/detect-text-24-04_2/Label_val.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR
