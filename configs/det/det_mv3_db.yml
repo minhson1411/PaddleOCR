@@ -10,7 +10,7 @@ Global:
   # evaluation is run every 2000 iterations
   eval_batch_step: [0, 2000]
   cal_metric_during_train: False
-  pretrained_model: ./pretrain_models/MobileNetV3_large_x0_5_pretrained
+  pretrained_model: /kaggle/input/MobileNetV3_large_x0_5_pretrained/24_04_02
   checkpoints:
   save_inference_dir:
   use_visualdl: False
