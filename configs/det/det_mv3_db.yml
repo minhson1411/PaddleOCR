@@ -10,7 +10,7 @@ Global:
   # evaluation is run every 2000 iterations
   eval_batch_step: [0, 2000]
   cal_metric_during_train: False
-  pretrained_model: /kaggle/input/weights-detect/best_model_21_05
+  pretrained_model: /kaggle/input/weights-detect/best_model_20_07/best_model_20_07/
   checkpoints:
   save_inference_dir:
   use_visualdl: False
@@ -64,9 +64,9 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: /kaggle/input/train-detect-21-05/train-detect-21-05/
+    data_dir: /kaggle/input/train-detect-20-07-02/train_detect_20_07_02/
     label_file_list:
-      - /kaggle/input/train-detect-21-05/train-detect-21-05/Label_train.txt
+      - /kaggle/input/train-detect-20-07-02/train_detect_20_07_02/Label_train.txt
     ratio_list: [1.0]
     transforms:
       - DecodeImage: # load image
@@ -107,9 +107,9 @@ Train:
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: /kaggle/input/train-detect-21-05/train-detect-21-05/
+    data_dir: /kaggle/input/train-detect-20-07-02/train_detect_20_07_02/
     label_file_list:
-      - /kaggle/input/train-detect-21-05/train-detect-21-05/Label_val.txt
+      - /kaggle/input/train-detect-20-07-02/train_detect_20_07_02/Label_val.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR
