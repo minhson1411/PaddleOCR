@@ -64,9 +64,9 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: /kaggle/input/train-detect-20-07-02/train_detect_20_07_02/
+    data_dir: /kaggle/input/train-detect-21-07/train_detect_21_07/
     label_file_list:
-      - /kaggle/input/train-detect-20-07-02/train_detect_20_07_02/Label_train.txt
+      - /kaggle/input/train-detect-21-07/train_detect_21_07/Label_train.txt
     ratio_list: [1.0]
     transforms:
       - DecodeImage: # load image
@@ -107,9 +107,9 @@ Train:
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: /kaggle/input/train-detect-20-07-02/train_detect_20_07_02/
+    data_dir: /kaggle/input/train-detect-21-07/train_detect_21_07/
     label_file_list:
-      - /kaggle/input/train-detect-20-07-02/train_detect_20_07_02/Label_val.txt
+      - /kaggle/input/train-detect-21-07/train_detect_21_07/Label_val.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR
